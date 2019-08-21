@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">SmartRefresh</string>
+
+    <string name="title_activity_index_main">Refresh</string>
+
+    <string name="fragment_example_no_more_data">No More Data</string>
+
+
+    <string name="item_example_number_title">Item %02d</string>
+    <string name="item_example_number_abstract">This is the abstract item %02d</string>
+
+
+</resources>

@@ -1,0 +1,11 @@
+<resources>
+    <!--180dp-->
+    <!-- Default screen margins, per the Android Design guidelines. -->
+
+
+    <dimen name="division_line">0.5dp</dimen>
+
+    <dimen name="dimenPaddingCommon">10dp</dimen>
+
+
+</resources>
