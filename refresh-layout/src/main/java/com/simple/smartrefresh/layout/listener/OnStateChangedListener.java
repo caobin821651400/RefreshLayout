@@ -1,15 +1,15 @@
 package com.simple.smartrefresh.layout.listener;
 
 
-import androidx.annotation.NonNull;
-import androidx.annotation.RestrictTo;
+import android.support.annotation.NonNull;
+import android.support.annotation.RestrictTo;
 
 import com.simple.smartrefresh.layout.api.RefreshLayout;
 import com.simple.smartrefresh.layout.constant.RefreshState;
 
-import static androidx.annotation.RestrictTo.Scope.LIBRARY;
-import static androidx.annotation.RestrictTo.Scope.LIBRARY_GROUP;
-import static androidx.annotation.RestrictTo.Scope.SUBCLASSES;
+import static android.support.annotation.RestrictTo.Scope.LIBRARY;
+import static android.support.annotation.RestrictTo.Scope.LIBRARY_GROUP;
+import static android.support.annotation.RestrictTo.Scope.SUBCLASSES;
 
 /**
  * 刷新状态改变监听器

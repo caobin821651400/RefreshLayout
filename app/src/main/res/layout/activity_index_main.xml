@@ -4,7 +4,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical">
 
-    <androidx.appcompat.widget.Toolbar
+    <android.support.v7.widget.Toolbar
         android:id="@+id/toolbar"
         style="@style/AppTheme.Toolbar"
         app:navigationIcon="?attr/homeAsUpIndicator"
@@ -21,12 +21,12 @@
         app:srlEnableOverScrollDrag="true">
 
 
-        <androidx.recyclerview.widget.RecyclerView
+        <android.support.v7.widget.RecyclerView
             android:id="@+id/recyclerView"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical"
             android:overScrollMode="never"
-            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
+            app:layoutManager="android.support.v7.widget.LinearLayoutManager" />
     </com.simple.smartrefresh.layout.SmartRefreshLayout>
 </LinearLayout>

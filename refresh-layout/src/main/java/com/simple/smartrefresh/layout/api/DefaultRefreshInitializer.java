@@ -1,7 +1,7 @@
 package com.simple.smartrefresh.layout.api;
 
 import android.content.Context;
-import androidx.annotation.NonNull;
+import android.support.annotation.NonNull;
 
 /**
  * 默认全局初始化器

@@ -3,12 +3,12 @@ apply plugin: 'com.novoda.bintray-release'
 
 android {
 
-    compileSdkVersion 28
-    buildToolsVersion '28.0.3'
+    compileSdkVersion 26
+    buildToolsVersion '26.0.2'
 
     defaultConfig {
-        minSdkVersion 12
-        targetSdkVersion 28
+        minSdkVersion 19
+        targetSdkVersion 26
         versionCode 1
         versionName "1.0"
 
@@ -28,13 +28,10 @@ android {
 
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
-    androidTestImplementation('androidx.test.espresso:espresso-core:3.1.0', {
-        exclude group: 'com.android.support', module: 'support-annotations'
-    })
     testImplementation 'junit:junit:4.12'
-    compileOnly 'androidx.annotation:annotation:1.0.0'
-    compileOnly 'androidx.recyclerview:recyclerview:1.0.0'
-    compileOnly 'com.google.android.material:material:1.0.0'
+    compileOnly 'com.android.support:support-annotations:26.0.2'
+    compileOnly 'com.android.support:recyclerview-v7:26.0.2'
+    compileOnly 'com.android.support:design:26.0.2'
 
 }
 
@@ -45,4 +42,14 @@ publish {
     publishVersion = '1.1.0'
     desc = 'An intelligent refresh layout'
     website = "https://github.com/scwang90/${rootProject.name}"
+}
+configurations.all {
+    resolutionStrategy.eachDependency {  details ->
+        def requested = details.requested
+        if (requested.group == 'com.android.support') {
+            if (!requested.name.startsWith("multidex")) {
+                details.useVersion '26.0.2'
+            }
+        }
+    }
 }

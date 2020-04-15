@@ -1,9 +1,9 @@
 package com.simple.smartrefresh.layout.api;
 
 import android.animation.ValueAnimator;
-import androidx.annotation.NonNull;
+import android.support.annotation.NonNull;
+import android.support.v4.widget.SwipeRefreshLayout;
 
-import androidx.swiperefreshlayout.widget.SwipeRefreshLayout;
 
 import com.simple.smartrefresh.layout.constant.RefreshState;
 

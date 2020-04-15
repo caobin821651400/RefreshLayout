@@ -1,6 +1,6 @@
 package com.simple.smartrefresh.layout.api;
 
-import androidx.annotation.NonNull;
+import android.support.annotation.NonNull;
 
 /**
  * 二级刷新监听器

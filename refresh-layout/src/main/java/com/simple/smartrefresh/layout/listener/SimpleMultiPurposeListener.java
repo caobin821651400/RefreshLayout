@@ -1,6 +1,6 @@
 package com.simple.smartrefresh.layout.listener;
 
-import androidx.annotation.NonNull;
+import android.support.annotation.NonNull;
 
 import com.simple.smartrefresh.layout.api.RefreshFooter;
 import com.simple.smartrefresh.layout.api.RefreshHeader;

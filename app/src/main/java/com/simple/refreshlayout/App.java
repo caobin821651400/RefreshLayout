@@ -2,8 +2,8 @@ package com.simple.refreshlayout;
 
 import android.app.Application;
 import android.content.Context;
-import androidx.annotation.NonNull;
-import androidx.appcompat.app.AppCompatDelegate;
+import android.support.annotation.NonNull;
+import android.support.v7.app.AppCompatDelegate;
 
 import com.simple.refreshlayout.util.DynamicTimeFormat;
 import com.simple.smartrefresh.layout.SmartRefreshLayout;
